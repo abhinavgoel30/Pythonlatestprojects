@@ -7,7 +7,6 @@ from io import BytesIO
 from PIL import Image
 import requests
 from ultralytics import YOLO
-from mediapipe import solutions
 
 router = APIRouter()
 
@@ -17,7 +16,7 @@ pose = mp_pose.Pose(static_image_mode=False, min_detection_confidence=0.5, min_t
 mp_drawing = mp.solutions.drawing_utils
 
 # Load YOLOv8 model
-yolo_model = YOLO('yolov8n.pt')
+yolo_model = YOLO('yolov8s.pt')
 
 FEEDBACK_SERVICE_URL = "https://pythonruleengine.onrender.com/check_posture/"  # Replace with actual URL
 
