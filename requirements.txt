@@ -6,3 +6,5 @@ Pillow==9.4.0
 numpy==1.23.5
 gunicorn==20.1.0
 python-multipart==0.0.9
+ultralytics==8.1.48
+requests==2.31.0
