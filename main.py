@@ -20,3 +20,6 @@ app.include_router(MediaPipe_ProcessImage.router)
 @app.get("/")
 def home():
     return {"message": "Hello, FastAPI!"}
+
+
+
