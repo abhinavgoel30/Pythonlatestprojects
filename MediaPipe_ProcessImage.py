@@ -16,7 +16,7 @@ pose = mp_pose.Pose(static_image_mode=False, min_detection_confidence=0.5, min_t
 mp_drawing = mp.solutions.drawing_utils
 
 # Load YOLOv8 model
-yolo_model = YOLO('yolov8s.pt')
+yolo_model = YOLO('yolov8n.pt')
 
 FEEDBACK_SERVICE_URL = "https://pythonruleengine.onrender.com/check_posture/"  # Replace with actual URL
 
